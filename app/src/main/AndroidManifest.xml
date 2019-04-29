@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobiletcc.curso.br.mobilesecretarytcc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:label="Lista de Usuários"
+            android:name=".ListaUsersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdmActivity" />
+        </activity>
+        <activity
+            android:name=".HistoricoConsultasActivity"
+            android:label="Histórico de Agendamentos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MensagemActivity"
+            android:label="Mensagens">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".VerConsAdminActivity"
+            android:label="Agenda">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdmActivity" />
+        </activity>
+        <activity android:name=".ClockActivity" />
+        <activity android:name=".CalendarioActivity" />
+        <activity
+            android:name=".AdmActivity"
+            android:label="Home Administrador" />
+        <activity
+            android:name=".ConsultasDisponiveisActivity"
+            android:label="Horários Disponíveis">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GerenciarConsultaActivity" />
+        </activity>
+        <activity
+            android:name=".AddConsultaActivity"
+            android:label="Gerenciar Horários">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdmActivity" />
+        </activity>
+        <activity
+            android:name=".ResetSenhaActivity"
+            android:label="Redefinir Senha">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Mobile Secretary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Home Usuário"></activity>
+        <activity
+            android:name=".GerenciarConsultaActivity"
+            android:label="Meus Agendamentos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MeuPerfilActivity"
+            android:label="Meu Perfil">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SobreActivity"
+            android:label="Sobre Nós">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:label="Fazer Cadastro">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>

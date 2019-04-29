@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context=".CadastroActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/edt_NomeUserId"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusedByDefault="true"
+        android:hint="Digite seu Nome"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fotoUserId"
+        app:layout_constraintStart_toStartOf="@+id/btn_fotoUserId"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fotoUserId" />
+
+    <EditText
+        android:id="@+id/editCadastroEmail"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:hint="Digite seu Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColor="#000"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/edt_NomeUserId"
+        app:layout_constraintStart_toStartOf="@+id/edt_NomeUserId"
+        app:layout_constraintTop_toBottomOf="@+id/edt_NomeUserId" />
+
+    <EditText
+        android:id="@+id/edit_CadastroSenha"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="#000"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/editCadastroEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editCadastroEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editCadastroEmail" />
+
+    <Button
+        android:id="@+id/btn_CadastroRegistrar"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/bg_calend"
+        android:text="Registrar"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_CadastroSenha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_CadastroSenha"
+        app:layout_constraintTop_toBottomOf="@+id/editConfSenhaID" />
+
+    <Button
+        android:id="@+id/btn_fotoUserId"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_button_img_rounded"
+        android:hint="Carregar foto"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_fotoUserId"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_color="@android:color/background_light"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fotoUserId"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fotoUserId"
+        app:layout_constraintStart_toStartOf="@+id/btn_fotoUserId"
+        app:layout_constraintTop_toTopOf="@+id/btn_fotoUserId"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editConfSenhaID"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:hint="Confirme sua senha"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/edit_CadastroSenha"
+        app:layout_constraintStart_toStartOf="@+id/edit_CadastroSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_CadastroSenha" />
+
+</android.support.constraint.ConstraintLayout>

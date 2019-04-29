@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context=".AdmActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:shadowColor="#fff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:text="Mobile Secretary"
+        android:textColor="#05226E"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_GerHorariosId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_calend"
+        android:padding="5dp"
+        android:text="Gerenciar Horários"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_VerConsultasId"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btn_VerConsultasId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_calend"
+        android:padding="5dp"
+        android:text="Ver Agenda"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/btn_GerHorariosId"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btn_MensagemAdmId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:padding="5dp"
+        android:text="Mensagens"
+        app:layout_constraintEnd_toEndOf="@+id/btn_VerConsultasId"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_VerConsultasId"
+        app:layout_constraintTop_toBottomOf="@+id/btn_VerConsultasId" />
+
+    <Button
+        android:id="@+id/btnHistAgendAdmID"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:padding="5dp"
+        android:text="Histórico de Agendamentos"
+        app:layout_constraintEnd_toEndOf="@+id/btn_GerHorariosId"
+        app:layout_constraintStart_toStartOf="@+id/btn_GerHorariosId"
+        app:layout_constraintTop_toBottomOf="@+id/btn_GerHorariosId" />
+
+    <Button
+        android:id="@+id/btn_UsuariosID"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:text="Usuários"
+        app:layout_constraintEnd_toEndOf="@+id/btnHistAgendAdmID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnHistAgendAdmID"
+        app:layout_constraintTop_toBottomOf="@+id/btnHistAgendAdmID" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "742060378314",
+    "firebase_url": "https://mobilesecretarytcc.firebaseio.com",
+    "project_id": "mobilesecretarytcc",
+    "storage_bucket": "mobilesecretarytcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742060378314:android:cca3c305035bf4f5",
+        "android_client_info": {
+          "package_name": "mobiletcc.curso.br.mobilesecretarytcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742060378314-ii740c9i2rjau5hb0qgt0mkl4o92vpj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobiletcc.curso.br.mobilesecretarytcc",
+            "certificate_hash": "22ed9aa0c96d9fce8f9d636cfa55084ab1e2313f"
+          }
+        },
+        {
+          "client_id": "742060378314-2fl4s9mc05v2gd07lhpbbvh1hgi0svl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobiletcc.curso.br.mobilesecretarytcc",
+            "certificate_hash": "7381e359d8cefe905d68e1ed1155fd1ea72c7c8f"
+          }
+        },
+        {
+          "client_id": "742060378314-isp086f2pv1m9c8beufa5s2iq7bmd9ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvAvH9e_6g-dA-Pl-KUFofZYJakor-Qcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742060378314-isp086f2pv1m9c8beufa5s2iq7bmd9ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

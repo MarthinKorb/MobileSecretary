@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btMeuPerfilId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_calend"
+        android:text="Meu Perfil"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btGerConsultaId"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/txt_DateId"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DateId" />
+
+    <Button
+        android:id="@+id/btGerConsultaId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/bg_calend"
+        android:text="Meus Agendamentos"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_DateId"
+        app:layout_constraintStart_toEndOf="@+id/btMeuPerfilId"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DateId" />
+
+    <Button
+        android:id="@+id/btSobreId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_calend"
+        android:text="Sobre"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMensagemId"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMeuPerfilId"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/btMensagemId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_calend"
+        android:text="Mensagem"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btGerConsultaId"
+        app:layout_constraintTop_toBottomOf="@+id/btGerConsultaId"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/txt_DateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Mobile Secretary"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

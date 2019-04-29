@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:hint="Digite seu Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/Login"
+        app:layout_constraintStart_toStartOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <EditText
+        android:id="@+id/edit_Senha"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_calend"
+        android:ems="10"
+        android:hint="Digite sua Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="15sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Email"
+        app:layout_constraintStart_toStartOf="@+id/edit_Email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Email" />
+
+    <Button
+        android:id="@+id/btn_Logar"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="205dp"
+        android:background="@drawable/bg_calend"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Novo"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_Senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Senha" />
+
+    <Button
+        android:id="@+id/btn_Novo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_calend"
+        android:text="Ainda não se Cadastrou? Cadastre-se agora!"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Reset_SenhaId"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Logar"
+        app:layout_constraintStart_toStartOf="@+id/btn_Logar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Logar" />
+
+    <TextView
+        android:id="@+id/txt_Reset_SenhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#fff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Redefinir Senha"
+        android:textColor="@color/colorButtons"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Novo"
+        app:layout_constraintStart_toStartOf="@+id/btn_Novo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Novo" />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Login"
+        android:textColor="#05226E"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
