@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundoapp"
+    android:background="@color/colorBackgroundApp"
     tools:context=".MeuPerfilActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -16,7 +16,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="60dp"
         android:text="Email:"
-        android:textColor="@color/colorButtons"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -43,7 +43,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="144dp"
         android:text="Ver histórico de Agendamentos"
-        android:textColor="@color/colorButtons"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"

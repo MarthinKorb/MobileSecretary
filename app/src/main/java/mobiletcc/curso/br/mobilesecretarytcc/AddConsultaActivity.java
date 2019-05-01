@@ -108,7 +108,6 @@ public class AddConsultaActivity extends AppCompatActivity implements TimePicker
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
         edtHora.setText(hourOfDay + ":" + minute);
     }
 
@@ -134,6 +133,7 @@ public class AddConsultaActivity extends AppCompatActivity implements TimePicker
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 listaConsulta.clear();
                 for (DataSnapshot dtSnapshot:dataSnapshot.getChildren()){
+
                     Consulta c = dtSnapshot.getValue(Consulta.class);
                     if(c.getIdUser() == null){
                         listaConsulta.add(c);

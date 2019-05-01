@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundoapp"
     tools:context=".AdmActivity">
 
     <TextView
@@ -21,7 +20,7 @@
         android:shadowDy="1"
         android:shadowRadius="10"
         android:text="Mobile Secretary"
-        android:textColor="#05226E"
+        android:textColor="@android:color/black"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
