@@ -58,6 +58,7 @@
         android:layout_marginTop="156dp"
         android:background="@drawable/bg_calend"
         android:text="Registrar"
+        android:textColor="@android:color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/edit_CadastroSenha"
         app:layout_constraintHorizontal_bias="0.0"
