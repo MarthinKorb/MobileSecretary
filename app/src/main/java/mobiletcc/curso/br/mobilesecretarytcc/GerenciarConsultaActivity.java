@@ -80,9 +80,6 @@ public class GerenciarConsultaActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 consultaSelecionadaDados =(Consulta)parent.getItemAtPosition(position);
                 confirmarCancelamento();
-               // alert("Você realmente deseja desmarcar esta consulta?  " + consultaSelecionadaDados.getDia() +" - " +
-                     //  " " + consultaSelecionadaDados.getHora());
-
             }
         });
 
@@ -165,6 +162,7 @@ public class GerenciarConsultaActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 listaConsultaDados.clear();
+
                 for (DataSnapshot dtSnapshot:dataSnapshot.getChildren()){
                     Consulta c = dtSnapshot.getValue(Consulta.class);
 
@@ -175,6 +173,10 @@ public class GerenciarConsultaActivity extends AppCompatActivity {
                 arrayAdapterGerConsulta = new ArrayAdapter<Consulta>(GerenciarConsultaActivity.this,
                         android.R.layout.simple_list_item_1, listaConsultaDados);
                 listView_ConsultaUser.setAdapter(arrayAdapterGerConsulta);
+
+                if (listaConsultaDados.isEmpty()){
+                    alert("Você não tem nenhum agendamento!");
+                }
             }
 
             @Override
