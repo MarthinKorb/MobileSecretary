@@ -175,7 +175,7 @@ public class GerenciarConsultaActivity extends AppCompatActivity {
                 listView_ConsultaUser.setAdapter(arrayAdapterGerConsulta);
 
                 if (listaConsultaDados.isEmpty()){
-                    alert("Você não tem nenhum agendamento!");
+                    alert("Você não tem agendamentos!");
                 }
             }
 

@@ -11,14 +11,17 @@
         android:id="@+id/btnResetSenhaId"
         android:layout_width="340dp"
         android:layout_height="40dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/bg_calend"
         android:text="Redefinir Senha"
         android:textColor="#fff"
-        app:layout_constraintEnd_toEndOf="@+id/editEResetmailId"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editEResetmailId"
-        app:layout_constraintTop_toBottomOf="@+id/editEResetmailId" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
