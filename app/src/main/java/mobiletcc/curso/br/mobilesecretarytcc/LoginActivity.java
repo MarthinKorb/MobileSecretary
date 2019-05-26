@@ -121,10 +121,14 @@ public class LoginActivity extends AppCompatActivity {
                             }
 
                         }else{
-                            dialog.dismiss();
-                            alert("Erro ao fazer o login! Verifique seu email e/ou senha!");
-                            editEmailLogin.setText("");
-                            editSenhaLogin.setText("");
+                            if (!task.isSuccessful()) {
+                                dialog.dismiss();
+                               // alert("Erro ao fazer o login! Verifique seu email e/ou senha!");
+                                alert(task.getException().getMessage());
+                                editEmailLogin.setText("");
+                                editSenhaLogin.setText("");
+                                editEmailLogin.requestFocus();
+                            }
                         }
                     }
                 });
