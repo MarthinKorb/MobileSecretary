@@ -13,24 +13,25 @@
         android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_send" />
 
     <ListView
         android:id="@+id/listView_mensagensID"
-        android:layout_width="match_parent"
-        android:layout_height="442dp"
+        android:layout_width="377dp"
+        android:layout_height="101dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImageView" />
 
@@ -62,5 +63,19 @@
         app:layout_constraintTop_toTopOf="@+id/edit_mensagemUID"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ListView
+        android:id="@+id/listView_RespID"
+        android:layout_width="375dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/listView_mensagensID"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/listView_mensagensID"
+        app:layout_constraintTop_toBottomOf="@+id/listView_mensagensID" />
 
 </android.support.constraint.ConstraintLayout>

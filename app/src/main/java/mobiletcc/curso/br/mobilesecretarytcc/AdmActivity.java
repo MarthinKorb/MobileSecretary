@@ -62,7 +62,7 @@ public class AdmActivity extends AppCompatActivity {
         btnMensAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(getApplicationContext(), MensagemActivity.class));
+                startActivity(new Intent(getApplicationContext(), MensagensAdminActivity.class));
             }
         });
 

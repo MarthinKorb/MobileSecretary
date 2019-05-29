@@ -67,11 +67,15 @@ public class HistoricoConsultasActivity extends AppCompatActivity {
                 arrayAdapterlistaHistCons = new ArrayAdapter<Consulta>(HistoricoConsultasActivity.this,
                         android.R.layout.simple_list_item_1, listaHistCons);
                 listViewHistCons.setAdapter(arrayAdapterlistaHistCons);
+
+                if (listaHistCons.isEmpty()){
+                    alert("Você não tem histórico de agendamentos!");
+                }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                alert(databaseError.getMessage());
             }
         });
     }

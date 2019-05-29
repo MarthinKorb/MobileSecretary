@@ -62,6 +62,8 @@ public class Mensagem {
     @Override
     public String toString() {
         return
-                 emailUser + " diz: \n" + texto_mensagem;
+               emailUser + " diz: \n"+
+                         "\n"+ texto_mensagem + "\n";
     }
+
 }
