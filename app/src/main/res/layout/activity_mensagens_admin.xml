@@ -8,8 +8,8 @@
 
     <ListView
         android:id="@+id/listView_MensAdminID"
-        android:layout_width="411dp"
-        android:layout_height="567dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
