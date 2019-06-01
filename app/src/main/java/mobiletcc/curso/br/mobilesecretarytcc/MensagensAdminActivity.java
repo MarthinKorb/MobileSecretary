@@ -157,12 +157,16 @@ public class MensagensAdminActivity extends AppCompatActivity {
                 listaMensagensAdmin.clear();
                 for (DataSnapshot dtSnapshot:dataSnapshot.getChildren()){
                     Mensagem m = dtSnapshot.getValue(Mensagem.class);
+
                     if (user.getUid().equals("uZAnSSHu9wRocrLEEy7pDhbPup22")){
                         listaMensagensAdmin.add(m);
                     }
                     arrayAdapterMensagensAdmin = new ArrayAdapter<Mensagem>(MensagensAdminActivity.this,
                             android.R.layout.simple_list_item_1, listaMensagensAdmin);
                     listView_MensAdmin.setAdapter(arrayAdapterMensagensAdmin);
+                }
+                if (listaMensagensAdmin.isEmpty()){
+                    alert("Você não tem mensagens!");
                 }
             }
 

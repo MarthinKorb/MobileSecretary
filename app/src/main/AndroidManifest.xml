@@ -19,7 +19,7 @@
                 android:value=".AdmActivity" />
         </activity>
 
-        <activity android:label="Mensagem do Usuário"
+        <activity android:label="Caixa de Mensagens"
             android:name=".MensagensAdminActivity">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
