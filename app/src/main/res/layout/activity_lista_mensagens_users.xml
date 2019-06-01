@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MensagensAdminActivity">
+    tools:context=".ListaMensagensUsersActivity">
 
     <ListView
-        android:id="@+id/listView_MensAdminID"
-        android:layout_width="411dp"
-        android:layout_height="567dp"
+        android:id="@+id/listView_MensUsersID"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -18,8 +18,6 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>

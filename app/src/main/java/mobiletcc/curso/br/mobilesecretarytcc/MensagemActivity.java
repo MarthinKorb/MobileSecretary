@@ -29,6 +29,7 @@ import java.util.UUID;
 
 import mobiletcc.curso.br.mobilesecretarytcc.Modelo.Consulta;
 import mobiletcc.curso.br.mobilesecretarytcc.Modelo.Mensagem;
+import mobiletcc.curso.br.mobilesecretarytcc.Modelo.MensagemUser;
 import mobiletcc.curso.br.mobilesecretarytcc.Modelo.RespostaAdmin;
 
 public class MensagemActivity extends AppCompatActivity {
@@ -133,7 +134,7 @@ public class MensagemActivity extends AppCompatActivity {
                 listaResp.clear();
                 for (DataSnapshot dtSnapshot:dataSnapshot.getChildren()){
 
-                    RespostaAdmin r =dtSnapshot.getValue(RespostaAdmin.class);
+                    RespostaAdmin r = dtSnapshot.getValue(RespostaAdmin.class);
 
                     if (!user.getUid().equals("uZAnSSHu9wRocrLEEy7pDhbPup22") ){
                         listaResp.add(r);
@@ -170,6 +171,18 @@ public class MensagemActivity extends AppCompatActivity {
                     m.setIdAdm("uZAnSSHu9wRocrLEEy7pDhbPup22");
                     m.setTimeStamp(System.currentTimeMillis());
                     reference.child("Mensagem").child(m.getId_mensagem()).setValue(m);
+
+                    /*
+                    MensagemUser mu = new MensagemUser();
+                    mu.setIdMensagem(UUID.randomUUID().toString());
+                    mu.setIdUser(auth.getCurrentUser().getUid());
+                    mu.setEmailUser(auth.getCurrentUser().getEmail());
+                    mu.setIdAdm("uZAnSSHu9wRocrLEEy7pDhbPup22");
+                    mu.setTimeStamp(System.currentTimeMillis());
+                    mu.setUltimaMensagem(mensagem);
+                    reference.child("MensagemUser").child(mu.getIdMensagem()).setValue(mu);
+                    */
+
                     editMensagem.setText("");
                 }
             }

@@ -99,14 +99,14 @@ public class MensagensAdminActivity extends AppCompatActivity {
 
         final EditText input = new EditText(MensagensAdminActivity.this);
 
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_TEXT);
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
         builder.setView(input);
 
         builder.setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                String respostaAdmin = input.getText().toString();
+                String respostaAdmin = input.getText().toString().trim();
 
 
                 if (input.getText().toString().trim().equals("")) {
@@ -128,7 +128,6 @@ public class MensagensAdminActivity extends AppCompatActivity {
         builder.show();
 
 }
-
 
     private void enviarResposta(String respostaAdmin) {
         alert("Resposta enviada à "+ mensagemSelecionada.getEmailUser());
@@ -158,7 +157,7 @@ public class MensagensAdminActivity extends AppCompatActivity {
                 listaMensagensAdmin.clear();
                 for (DataSnapshot dtSnapshot:dataSnapshot.getChildren()){
                     Mensagem m = dtSnapshot.getValue(Mensagem.class);
-                    if (user.getUid().equals("uZAnSSHu9wRocrLEEy7pDhbPup22") || auth.getCurrentUser().getUid()!= null){
+                    if (user.getUid().equals("uZAnSSHu9wRocrLEEy7pDhbPup22")){
                         listaMensagensAdmin.add(m);
                     }
                     arrayAdapterMensagensAdmin = new ArrayAdapter<Mensagem>(MensagensAdminActivity.this,

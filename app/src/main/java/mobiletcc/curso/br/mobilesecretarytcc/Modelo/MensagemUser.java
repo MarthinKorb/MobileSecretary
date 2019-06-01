@@ -1,22 +1,15 @@
 package mobiletcc.curso.br.mobilesecretarytcc.Modelo;
 
-public class Mensagem {
-    private String id_mensagem;
+public class MensagemUser {
+
+    private String idMensagem;
     private String idUser;
     private String emailUser;
     private String idAdm;
     private long timeStamp;
-    private String texto_mensagem;
+    private String ultimaMensagem;
 
-    public Mensagem() {
-    }
-
-    public String getId_mensagem() {
-        return id_mensagem;
-    }
-
-    public void setId_mensagem(String id_mensagem) {
-        this.id_mensagem = id_mensagem;
+    public MensagemUser() {
     }
 
     public String getIdUser() {
@@ -51,19 +44,25 @@ public class Mensagem {
         this.timeStamp = timeStamp;
     }
 
-    public String getTexto_mensagem() {
-        return texto_mensagem;
+    public String getUltimaMensagem() {
+        return ultimaMensagem;
     }
 
-    public void setTexto_mensagem(String texto_mensagem) {
-        this.texto_mensagem = texto_mensagem;
+    public void setUltimaMensagem(String ultimaMensagem) {
+        this.ultimaMensagem = ultimaMensagem;
+    }
+
+
+    public String getIdMensagem() {
+        return idMensagem;
+    }
+
+    public void setIdMensagem(String idMensagem) {
+        this.idMensagem = idMensagem;
     }
 
     @Override
     public String toString() {
-        return
-               "\n"+emailUser + " diz: \n"+
-                         "\n"+ texto_mensagem + "\n";
+        return  "\n"+ emailUser + " diz..."+ "\n\n" + ultimaMensagem + "\n";
     }
-
 }

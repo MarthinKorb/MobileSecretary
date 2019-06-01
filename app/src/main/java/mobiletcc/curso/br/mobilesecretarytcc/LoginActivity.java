@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             FirebaseUser user = auth.getCurrentUser();
 
-                            if (email.equals("admin@admin.com")) {
+                            if (email.toLowerCase().equals("admin@admin.com")) {
                                 if (senha.equals("123456")) {
                                     dialog.dismiss();
                                     startActivity(new Intent(getApplicationContext(), AdmActivity.class));

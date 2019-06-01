@@ -53,6 +53,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Nome: " + nomeUsuario + "\nTipo: " + tipo;
+        return "\nNome: " + nomeUsuario + "\nTipo: " + tipo;
     }
 }
