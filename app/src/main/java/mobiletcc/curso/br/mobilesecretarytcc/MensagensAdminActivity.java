@@ -111,7 +111,7 @@ public class MensagensAdminActivity extends AppCompatActivity {
 
                 if (input.getText().toString().trim().equals("")) {
                     Toast.makeText(MensagensAdminActivity.this,
-                            "Escreva uma mensagem!", Toast.LENGTH_SHORT).show();
+                            "Mensagem não enviada!\nEscreva uma mensagem!", Toast.LENGTH_SHORT).show();
                 } else {
                     enviarResposta(respostaAdmin);
                 }

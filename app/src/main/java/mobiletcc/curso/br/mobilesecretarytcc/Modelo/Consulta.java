@@ -56,6 +56,6 @@ public class Consulta {
 
     @Override
     public String toString() {
-        return "\nDia: " + Dia + "     |     Hora: " + Hora + "\nCliente: "+ emailUser +"\n";
+        return "\n       Dia: " + Dia + "     |     Hora: " + Hora + "\n       Cliente: "+ emailUser +"\n";
     }
 }
